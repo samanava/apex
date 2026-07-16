@@ -5,7 +5,7 @@
         {
             "title": "Introduction",
             "filename": "../../../introduction/introduction.md",
-            "description": "Workshop overview, APEX context, objectives, and useful links."
+            "description": "Workshop overview, APEX page and region concepts, objectives, prerequisites, downloads, and useful links."
         },
         {
             "title": "Get Started",

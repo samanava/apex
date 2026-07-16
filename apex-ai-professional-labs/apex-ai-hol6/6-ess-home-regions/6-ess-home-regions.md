@@ -1,4 +1,4 @@
-# Lab 6: Employee Self Service - Add Home Regions
+# Lab 6: Employee Self Service (ESS) - Add Home Regions
 
 ## Introduction
 

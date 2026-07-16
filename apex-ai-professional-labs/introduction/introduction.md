@@ -4,9 +4,9 @@
 
 Oracle APEX is a low-code application platform for Oracle Database. APEX Application Development, Autonomous Data Warehouse (ADW), Autonomous Transaction Processing (ATP), and Autonomous JSON Database are fully managed services, pre-integrated and pre-configured with APEX, for rapidly building and deploying modern data-driven applications in Oracle Cloud. Business users, citizen developers, and application developers can create enterprise apps faster with less code, without learning complex web technologies, using only a browser.
 
-Oracle APEX continues to evolve for modern application development. Oracle APEX 26.1 includes AI-assisted development capabilities, APEXlang for expressing application intent as structured metadata, Universal Theme enhancements, workflow improvements, security updates, and richer declarative components. These features build on the same core model you use in this workshop: pages, regions, items, shared components, and data-driven behavior.
+A page is the basic building block of an application. A region is an area on a page that serves as a container for content. Use Page Designer to maintain and enhance pages within an Oracle APEX application.
 
-In this workshop, you explore and review the Page Designer in APEX. Then, you create and configure pages and regions in the Talent Acquisition Portal. You also make a short update in the Employee Self-Service Portal (ESS) so both applications begin to feel more structured and useful.
+In this workshop, you use Page Designer to create and configure pages and regions in the Talent Acquisition Portal (TAP) and Employee Self-Service Portal (ESS). You work with Static Content, Dynamic Content, and Cards regions; configure region sources and positions; add a region to the Global Page; and inspect page rendering with Debug mode.
 
 You are building a Talent Management System (TMS) for a sample company called Acme Corp. The system covers the complete employee lifecycle:
 
@@ -16,13 +16,13 @@ Job Opens -> Candidate Applies -> Interviews -> Offer Made
          -> Leave Management -> Self-Service -> Analytics
 ```
 
-This lifecycle is split across three APEX applications:
+The Talent Management System is split across three APEX applications:
 
 - **Talent Acquisition Portal** - Used by recruiters and hiring managers to post jobs, track candidates, schedule interviews, and manage offers.
 - **Employee Self-Service Portal (ESS)** - Used by employees and HR administrators for onboarding tasks, leave requests, payslips, employee profiles, and HR self-service.
 - **HR Analytics App (HAA)** - Used by HR administrators and department heads for pipeline, time-to-hire, headcount, and leave analytics.
 
-Once the pages and regions are created, Talent Acquisition Portal users will be able to view the following candidate and hiring details in the application:
+In this workshop, you update TAP to display the following candidate and hiring information:
 
 - Candidate details
 - Application history
@@ -32,23 +32,41 @@ Once the pages and regions are created, Talent Acquisition Portal users will be 
 
 ESS users will see a personalized home page with onboarding progress placeholder content.
 
-Estimated time: 35 minutes
+### Workshop Flow
+
+Complete the workshop in the following order:
+
+1. **Get Started** - Access an Oracle APEX workspace.
+2. **Lab 1: Create Candidate Profile Page Manually** - Create a blank page and add two Static Content regions.
+3. **Lab 2: Add Regions to the Candidate Pipeline Page** - Add Dynamic Content and Cards regions.
+4. **Lab 3: Configure the Global Page** - Add a shared hiring banner to Page 0.
+5. **Lab 4: Add a Dynamic Content Region** - Display the active-candidate count on TAP Home.
+6. **Lab 5: Enable Debugging and Review** - Enable App Trace and review page-rendering details.
+7. **Lab 6: Employee Self Service (ESS) - Add Home Regions** - Add welcome and onboarding-progress regions to ESS Home.
+
+Estimated Workshop Time: 35 minutes
 
 ## Objectives
 
 In this workshop, you will learn how to:
 
 - Navigate through and review the Page Designer panes.
-- Create a blank page to display business information.
-- Add regions for static and dynamic content.
-- Configure a Cards region to display query results in a visual layout.
-- Add a Global Page region that appears across an application.
-- Add page regions to a second application.
-- Enable and review debug output to inspect page rendering and SQL execution.
+- Create a blank page with the Create Page Wizard.
+- Create regions from the Gallery and the Rendering Tree context menu.
+- Configure region types, sources, positions, and attributes.
+- Use a Dynamic Content region to display HTML returned by a PL/SQL function.
+- Configure a Cards region based on a SQL Query.
+- Add a region to the Global Page so it appears throughout the application.
+- Compare APEX debug levels and review page-rendering details.
+- Use the `&APP_USER.` substitution string in a Static Content region.
 
 ## Prerequisites
 
 - An APEX workspace.
+
+- The **Talent Acquisition Portal** and **Employee Self Service** applications.
+
+- The `TMS_JOB_REQUISITIONS` and `TMS_CANDIDATES` tables.
 
 - An API key for the AI provider of your choice. Supported providers include OCI Generative AI, OpenAI, Cohere, Google Gemini, Anthropic Claude, Mistral AI, Ollama, and Generic OpenAI API Compatible providers.
 
@@ -91,6 +109,9 @@ If you are stuck or the apps are not working as expected, you can download and i
 
 - [Oracle APEX Product Overview](https://www.oracle.com/apex/)
 - [Oracle APEX 26.1 Documentation](https://docs.oracle.com/en/database/oracle/apex/26.1/)
+- [Managing Pages in an Application](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/managing-pages-in-an-application.html)
+- [About Page Designer](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/about-page-designer.html)
+- [About Regions](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/about-regions.html)
 - [Oracle APEX Tutorials](https://apex.oracle.com/en/learn/tutorials/)
 - [Oracle APEX Community](https://apex.oracle.com/community/)
 - [Oracle APEX Discussion Forum](https://forums.oracle.com/ords/apexds/domain/dev-community/category/application_express)

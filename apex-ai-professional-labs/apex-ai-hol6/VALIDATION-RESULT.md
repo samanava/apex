@@ -1,6 +1,6 @@
 # LiveLabs Workshop Validation – apex-ai-hol6
 
-Generated on 2026-07-16T11:55:27.339247+00:00
+Generated on 2026-07-16T12:24:24.555374+00:00
 
 ## Structure Check
 - ✅ Required folders and workshop variants present.
