@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this lab, you add a placeholder Active Candidates region to TAP Home. A later module can refresh it with AJAX without reloading the page.
+The Dynamic Content region lets you programmatically generate all its HTML markup. In this lab, the PL/SQL function returns that markup in a CLOB (Character Large Object).
+
+In Lab 2, you used Dynamic Content for the open-requisitions banner. In this lab, you use the same region type on TAP Home to display the number of active candidates.
 
 Estimated time: 5 minutes
 
@@ -18,15 +20,13 @@ In this lab, you will learn how to:
 
 ## Task 1: Create the Active Candidates Region
 
-In this task, you will add the region shell to TAP Home. The region will later show a dynamic count of candidates who are still active in the hiring process.
+In this task, you will create an **Active Candidates** Dynamic Content region on TAP Home. You will add a PL/SQL function that counts candidates whose stage is not **Hired** or **Rejected**. The function returns the count in a CLOB containing HTML, which APEX displays when it renders the region.
 
 1. From the running TAP page, use the **Developer Toolbar** at the bottom of the page and select **1 - Home** to open the Home page in Page Designer.
 
     ![Home page opened from the Developer Toolbar](images/01-open-home-page-designer.png " ")
 
-2. In the **Rendering Tree**, right-click **Body**.
-
-    Select **Create Region**.
+2. In the **Rendering Tree**, right-click **Body**, then select **Create Region**.
 
     ![Create Region selected from the Body context menu](images/02-create-region-body.png " ")
 
@@ -79,17 +79,19 @@ In this task, you will add the region shell to TAP Home. The region will later s
 
 ## Summary
 
-In this lab, you added a dynamic **Active Candidates** region to the TAP Home page.
+You learned how a Dynamic Content region uses a function to generate HTML markup.
 
-The region uses a PL/SQL function body returning a CLOB to calculate and display the number of candidates who are still active in the hiring process.
+The PL/SQL source can query database data before generating that HTML. You used it to calculate the active-candidate count whenever the page renders.
 
-This creates a simple runtime metric that can be expanded in later modules with refresh behavior and richer dashboard content.
-
-At the end of this lab, you are on the running TAP **Home** page. In the next lab, you will open the **Candidate Pipeline** page and enable debugging.
+At the end of this lab, you are on the running TAP **Home** page. In the next lab, you will enable debugging and review the Home page debug output.
 
 You may now proceed to the next lab.
+
+## Learn More
+
+* [Dynamically Formatting Data](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/dynamically-formatting-data.html)
 
 ## Acknowledgements
 
 - **Author** - Sahaana Manavalan, Senior Product Manager
-- **Author** - Roopesh Thokala, Principal Product Manager
+- **Last Updated By/Date** - Sahaana Manavalan, Senior Product Manager, July 2026

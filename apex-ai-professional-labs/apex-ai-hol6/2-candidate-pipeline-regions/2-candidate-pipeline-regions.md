@@ -2,7 +2,16 @@
 
 ## Introduction
 
-In this lab, you add a live open-requisitions banner and a Cards region to the TAP Candidate Pipeline page.
+The region **Type** determines how a region is rendered at runtime.
+
+The **Source** attributes define the content or data used by a region. For a SQL-based region, the **Source > Type** attribute determines how the data is retrieved.
+
+In this lab, you configure two supported region types on the TAP **Candidate Pipeline** page:
+
+- **Dynamic Content** - Displays the HTML content returned by a function.
+- **Cards** - A cards page features an orderly layout of information tiles.
+
+The Dynamic Content region uses a PL/SQL function to display the number of open requisitions. The Cards region uses a SQL Query to display candidate information.
 
 Estimated time: 10 minutes
 
@@ -10,7 +19,7 @@ Estimated time: 10 minutes
 
 In this lab, you will learn how to:
 
-- Add a Dynamic Content region before the main page content.
+- Add a Dynamic Content region in the Top Navigation position.
 - Display a live count of open job requisitions.
 - Add an Applied Cards region for candidate pipeline data.
 - Configure card title, subtitle, body, and icon attributes.
@@ -24,7 +33,7 @@ In this lab, you will learn how to:
 
 ## Task 1: Add the Open Requisitions Banner
 
-In this task, you will add a banner region above the Candidate Pipeline content. The banner uses PL/SQL to count open requisitions and display the result at runtime.
+In this task, you will create an **Open Requisitions** Dynamic Content region. You will add a PL/SQL function that counts open requisitions and returns the count as HTML. You will place the region in **Top Navigation** so it appears above the Candidate Pipeline content.
 
 1. From the running **Candidate Profile** page, use the **Developer Toolbar** at the bottom of the page to return to the TAP application home page in App Builder.
 
@@ -34,9 +43,7 @@ In this task, you will add a banner region above the Candidate Pipeline content.
 
     ![Candidate Pipeline page selected on the application home page](images/02-open-candidate-pipeline-page.png " ")
 
-3. In the **Rendering Tree**, right-click **Components**.
-
-    Select **Create Region**.
+3. In the **Rendering Tree**, right-click **Components**, then select **Create Region**.
 
     ![Create Region selected from the Components context menu](images/03-create-region-from-components.png " ")
 
@@ -83,11 +90,9 @@ In this task, you will add a banner region above the Candidate Pipeline content.
 
 ## Task 2: Add the Candidate Cards Region
 
-In this task, you will replace the default tabular view with a Cards region. Cards make each candidate easier to scan by showing the candidate name, current stage, and applied date as separate card fields.
+In this task, you will create an **Applied** Cards region based on a SQL Query. The query returns the candidate name, current stage, and applied date. You will select those query columns for the card title, subtitle, body, and initials, and then run the page to review the result.
 
-1. In the **Rendering Tree**, right-click **Body**.
-
-    Select **Create Region**.
+1. In the **Rendering Tree**, right-click **Body**, then select **Create Region**.
 
     ![Create Region selected from the Body context menu](images/06-create-cards-region.png " ")
 
@@ -148,17 +153,22 @@ In this task, you will replace the default tabular view with a Cards region. Car
 
 ## Summary
 
-In this lab, you improved the **Candidate Pipeline** page by adding regions that make the page easier to scan.
+You learned that the region **Type** determines how a region is rendered at runtime.
 
-The **Open Requisitions** region displays a runtime count of open job requisitions.
+A Dynamic Content region runs PL/SQL during page rendering and displays the returned HTML. You used this behavior to calculate the open-requisition count at runtime.
 
-The **Applied** Cards region presents candidate pipeline data as cards, with each card showing the candidate name, current stage, applied date, and initials.
+You also learned how to configure a Cards region based on a SQL Query and select columns for the card title, subtitle, body, and initials.
 
-At the end of this lab, you are on the running **Candidate Pipeline** page. In the next lab, you will return to the TAP application home page and open **Shared Components**.
+At the end of this lab, you are on the running **Candidate Pipeline** page. In the next lab, you will return to the TAP application home page and open **Page 0: Global Page**.
 
 You may now proceed to the next lab.
+
+## Learn More
+
+* [Supported Region Types](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/supported-region-types.html)
+* [Developing Reports](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/developing-reports.html)
 
 ## Acknowledgements
 
 - **Author** - Sahaana Manavalan, Senior Product Manager
-- **Author** - Roopesh Thokala, Principal Product Manager
+- **Last Updated By/Date** - Sahaana Manavalan, Senior Product Manager, July 2026

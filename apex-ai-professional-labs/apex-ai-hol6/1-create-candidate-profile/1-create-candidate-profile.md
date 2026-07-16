@@ -2,7 +2,13 @@
 
 ## Introduction
 
-In this lab, you create a Candidate Profile page in the Talent Acquisition Portal (TAP). You also use Page Designer to inspect page structure, view attribute help, and add static content regions to the page body.
+A page is the basic building block of an application. Developers add pages to an application by running the Create Page Wizard.
+
+A region is an area on a page that serves as a container for content.
+
+Use Page Designer to maintain and enhance pages within an Oracle APEX application. Page Designer includes the Rendering tree, Layout tab, Property Editor, and other tools for working with page components.
+
+In this lab, you use the Create Page Wizard to create a blank **Candidate Profile** page in the Talent Acquisition Portal (TAP). You then review the Page Designer panes, display help for an attribute, and add two Static Content regions to **Body**.
 
 Estimated time: 5 minutes
 
@@ -24,7 +30,7 @@ In this lab, you will learn how to:
 
 ## Task 1: Create and Inspect the Page
 
-In this task, you will create a blank Candidate Profile page and review Page Designer. Page Designer is where you arrange page components, edit component attributes, and access attribute-level help.
+In this task, you will run the Create Page Wizard and select **Blank Page** to create the **Candidate Profile** page. Page Designer opens automatically after APEX creates the page. You will then review its three main panes and display help for the Breadcrumb **Type** attribute.
 
 1. In APEX App Builder, open the **Talent Acquisition Portal** application.
 
@@ -34,15 +40,11 @@ In this task, you will create a blank Candidate Profile page and review Page Des
 
     ![Create Page button](images/02-create-page.png " ")
 
-3. Select **Blank Page**.
-
-    Select **Next**.
+3. Select **Blank Page**, then select **Next**.
 
     ![Blank Page option](images/03-select-blank-page.png " ")
 
-4. For **Name**, enter **Candidate Profile**.
-
-    Select **Create Page**.
+4. For **Name**, enter **Candidate Profile**, then select **Create Page**.
 
     ![Candidate Profile page definition](images/04-name-candidate-profile.png " ")
 
@@ -56,17 +58,7 @@ In this task, you will create a blank Candidate Profile page and review Page Des
 
     ![Candidate Profile page in Page Designer](images/05-page-designer-opened.png " ")
 
-6. The Page Designer toolbar displays at the top of the page and contains buttons and menu options.
-
-    To view an online summary of Page Designer, select **Help > Getting Started with Page Designer**.
-
-    To view help for a selected attribute, select a component and then select an attribute in the Property Editor.
-
-    In the **Rendering Tree** (Left Pane), select **Breadcrumb**.
-
-    In the **Property Editor** (Right Pane), select **Identification > Type**.
-
-    Select **Help**.
+6. In Page Designer, select **Breadcrumb** in the **Rendering Tree** (Left Pane), select **Identification > Type** in the **Property Editor** (Right Pane), then select **Help** on the toolbar.
 
     The help text for **Type** is displayed.
 
@@ -74,13 +66,9 @@ In this task, you will create a blank Candidate Profile page and review Page Des
 
 ## Task 2: Add Candidate Profile Regions
 
-In this task, you will add two Static Content regions to the Candidate Profile page. These regions establish the page layout that later modules can extend with candidate details and application activity.
+In this task, you will add the **Candidate Details** and **Application History** Static Content regions to **Body**. You will add the first region from the Gallery and the second from the Rendering Tree context menu. This demonstrates the two methods for creating a region manually in Page Designer.
 
-1. In the newly created page, navigate to the **Gallery Menu** at the bottom.
-
-    The Gallery Menu shows **Regions**, **Items**, and **Buttons** categories.
-
-    Confirm that the **Regions** tab is selected.
+1. In the newly created page, navigate to the **Gallery Menu** at the bottom and confirm that the **Regions** tab is selected.
 
     ![Gallery Menu with Regions selected](images/07-gallery-regions-tab.png " ")
 
@@ -96,9 +84,7 @@ In this task, you will add two Static Content regions to the Candidate Profile p
 
     ![Candidate Details region properties](images/09-configure-candidate-details-region.png " ")
 
-4. In the **Rendering Tree**, right-click **Body**.
-
-    Select **Create Region**.
+4. In the **Rendering Tree**, right-click **Body**, then select **Create Region**.
 
     ![Create Region selected from the Body context menu](images/10-create-second-region.png " ")
 
@@ -118,23 +104,25 @@ In this task, you will add two Static Content regions to the Candidate Profile p
 
     ![Candidate Profile page with Candidate Details and Application History regions](images/13-candidate-profile-page-run.png " ")
 
-## Learn More
-
-* [Oracle APEX Page Designer](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/using-page-designer.html)
-
 ## Summary
 
-In this lab, you created the **Candidate Profile** page manually and opened it in Page Designer.
+You learned how to add a page with the Create Page Wizard and maintain it in Page Designer.
 
-You reviewed the main Page Designer areas, used attribute help, and added the first two page regions: **Candidate Details** and **Application History**.
+You also learned how Page Designer represents page components in the **Rendering Tree** and displays their settings in the **Property Editor**. Attribute help explains individual settings while you work.
 
-These regions create the basic page structure that later modules can extend with candidate data and application activity.
+You learned how to create regions from the **Gallery Menu** and the **Rendering Tree** context menu. You used both methods to add Static Content regions to **Body**.
 
 At the end of this lab, you are on the running **Candidate Profile** page. In the next lab, you will return to the TAP application home page and open the **Candidate Pipeline** page in Page Designer.
 
 You may now proceed to the next lab.
 
+## Learn More
+
+* [About Page Designer](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/about-page-designer.html)
+* [Managing Pages in an Application](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/managing-pages-in-an-application.html)
+* [About Regions](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/about-regions.html)
+
 ## Acknowledgements
 
 - **Author** - Sahaana Manavalan, Senior Product Manager
-- **Author** - Roopesh Thokala, Principal Product Manager
+- **Last Updated By/Date** - Sahaana Manavalan, Senior Product Manager, July 2026

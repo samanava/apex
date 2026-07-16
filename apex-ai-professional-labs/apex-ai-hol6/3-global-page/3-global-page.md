@@ -2,7 +2,11 @@
 
 ## Introduction
 
-In this lab, you add a Page 0 banner that displays the current number of TAP open roles on every application page.
+In APEX, Page 0 is the Global Page. The Oracle APEX engine renders all components you add to a Global page on every page within your application.
+
+The **Layout > Position** attribute selects the template position used to display a region. A page template must include the selected position for the region to appear there.
+
+In this lab, you add a **Hiring_Info** Static Content region to the TAP Global Page. You place it in **After Logo** so the same hiring message appears near the top of TAP pages.
 
 Estimated time: 5 minutes
 
@@ -18,7 +22,9 @@ In this lab, you will learn how to:
 
 ## Task 1: Add the Global Banner
 
-In this task, you will add a Static Content region to the Global Page. Regions on Page 0 render across the application when their display point applies to the current page template.
+In this task, you will open **Page 0: Global Page** and drag a Static Content region to **After Logo**. You will name the region **Hiring_Info**, add the hiring-message HTML, and select the **Title Bar** template. You will then run the page and confirm that the shared banner appears.
+
+The region position controls where shared content appears. For this banner, you place the region in **After Logo** so the message appears near the top of TAP pages that use that position.
 
 1. From the running **Candidate Pipeline** page, use the **Developer Toolbar** at the bottom of the page and select the **Application ID**.
 
@@ -66,17 +72,19 @@ In this task, you will add a Static Content region to the Global Page. Regions o
 
 ## Summary
 
-In this lab, you configured the **Global Page** to display a banner across the Talent Acquisition Portal.
+You learned that the Oracle APEX engine renders all components you add to a Global page on every page within your application.
 
-The **Hiring_Info** region was added to Page 0 and placed in the **After Logo** region so the hiring message appears consistently across TAP pages.
+You also learned how to use **After Logo** as the position for the **Hiring_Info** region.
 
-This pattern is useful for global messages, alerts, and navigation prompts that should appear throughout an application.
-
-At the end of this lab, you are on a running TAP page with the global banner visible. In the next lab, you will return to the TAP application home page and open the **Home** page in Page Designer.
+At the end of this lab, you are on a running TAP page with the global banner visible. In the next lab, you will open **1 - Home** in Page Designer and add a dynamic region.
 
 You may now proceed to the next lab.
+
+## Learn More
+
+* [Creating a Global Page to Display Components on Every Page](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/creating-a-global-page-to-display-components-on-every-page.html)
 
 ## Acknowledgements
 
 - **Author** - Sahaana Manavalan, Senior Product Manager
-- **Author** - Roopesh Thokala, Principal Product Manager
+- **Last Updated By/Date** - Sahaana Manavalan, Senior Product Manager, July 2026

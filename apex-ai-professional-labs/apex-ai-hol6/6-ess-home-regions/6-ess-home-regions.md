@@ -2,7 +2,11 @@
 
 ## Introduction
 
-In this lab, you add a personalized welcome banner and a static onboarding-progress region to the Employee Self Service (ESS) Home page.
+Use the **Layout > Position** attribute to select the template position for a region.
+
+Static Content displays text content. `APP_USER` is the current user running the application, and its substitution string syntax is `&APP_USER.`.
+
+In this lab, you apply these concepts in the Employee Self Service (ESS) application. You add a welcome region to **Breadcrumb Bar** and an onboarding-progress region to **Body**.
 
 Estimated time: 5 minutes
 
@@ -18,17 +22,13 @@ In this lab, you will learn how to:
 
 ## Task 1: Add the Welcome Banner
 
-In this task, you will add a Static Content region to the ESS Home page. The region greets the signed-in user and gives the Home page a more personal starting point.
+In this task, you will switch from TAP to the **Employee Self Service** application and open its Home page in Page Designer. You will create a Static Content region in **Breadcrumb Bar** and add HTML that uses `&APP_USER.` to display the current application user.
 
-1. Return to **Page Designer**.
-
-    In Page Designer, select the **App Builder** icon.
+1. Return to **Page Designer** and, in the left navigation, select the **App Builder** icon.
 
     ![App Builder icon selected in Page Designer](images/01-click-app-builder-icon.png " ")
 
-2. Return to the App Builder **Applications** page.
-
-    Open the **Employee Self Service** application.
+2. Return to the App Builder **Applications** page and open the **Employee Self Service** application.
 
     ![Employee Self-Service application selected on the Applications page](images/02-open-employee-self-service.png " ")
 
@@ -36,9 +36,7 @@ In this task, you will add a Static Content region to the ESS Home page. The reg
 
     ![ESS Home page selected on the application home page](images/03-open-ess-home-page.png " ")
 
-4. In the **Rendering Tree**, right-click **Breadcrumb Bar**.
-
-    Select **Create Region**.
+4. In the **Rendering Tree**, right-click **Breadcrumb Bar**, then select **Create Region**.
 
     ![Create Region selected from the Breadcrumb Bar context menu](images/04-create-welcome-region.png " ")
 
@@ -57,11 +55,9 @@ In this task, you will add a Static Content region to the ESS Home page. The reg
 
 ## Task 2: Add the Onboarding Progress Region
 
-In this task, you will add a second Static Content region with a placeholder progress bar. Module 12 replaces this static value with a computed onboarding progress value.
+In this task, you will create the **Your Onboarding Progress** Static Content region in **Body**. You will add HTML for a progress bar with a fixed value of zero.
 
-1. In the **Rendering Tree**, right-click **Body**.
-
-    Select **Create Region**.
+1. In the **Rendering Tree**, right-click **Body**, then select **Create Region**.
 
     ![Create Region selected from the Body context menu](images/05-create-progress-region.png " ")
 
@@ -101,17 +97,22 @@ In this task, you will add a second Static Content region with a placeholder pro
 
 ## Summary
 
-In this lab, you made a small update to the **Employee Self Service (ESS)** Home page.
+You learned how to use **Layout > Position** to place regions in **Breadcrumb Bar** and **Body**.
 
-The welcome message uses `&APP_USER.` to personalize the page for the signed-in user.
+You also learned that `APP_USER` is the current user running the application and that its substitution string syntax is `&APP_USER.`.
 
-The onboarding progress region adds a static progress indicator that later modules can replace with a computed onboarding status.
+You added HTML to Static Content regions for the welcome message and onboarding progress placeholder.
 
-Across this module, you created and configured page regions in TAP and ESS, used Page Designer to place content in specific page areas, added dynamic PL/SQL output, configured a global Page 0 banner, and reviewed page rendering with APEX debug.
+Across this module, you learned how APEX pages contain regions, how region types and sources control their output, how Page 0 shares components, and how debug output reveals page and region processing.
 
 This completes the module.
+
+## Learn More
+
+* [Editing Regions](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/editing-regions.html)
+* [Using Built-in Substitution Strings](https://docs.oracle.com/en/database/oracle/apex/26.1/htmdb/using-available-built-in-substitution-strings.html)
 
 ## Acknowledgements
 
 - **Author** - Sahaana Manavalan, Senior Product Manager
-- **Author** - Roopesh Thokala, Principal Product Manager
+- **Last Updated By/Date** - Sahaana Manavalan, Senior Product Manager, July 2026
