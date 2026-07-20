@@ -22,7 +22,7 @@ In this lab, you will learn how to:
 
 ## Task 1: Add the Global Banner
 
-In this task, you will open **Page 0: Global Page** and drag a Static Content region to **After Logo**. You will name the region **Hiring_Info**, add the hiring-message HTML, and select the **Title Bar** template. You will then run the page and confirm that the shared banner appears.
+In this task, you will create the **Hiring_Info** Static Content region in **After Logo**. The region uses the **Title Bar** template and HTML source to display a shared hiring banner across TAP pages.
 
 The region position controls where shared content appears. For this banner, you place the region in **After Logo** so the message appears near the top of TAP pages that use that position.
 

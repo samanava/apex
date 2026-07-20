@@ -32,18 +32,6 @@ In this workshop, you update TAP to display the following candidate and hiring i
 
 ESS users will see a personalized home page with onboarding progress placeholder content.
 
-### Workshop Flow
-
-Complete the workshop in the following order:
-
-1. **Get Started** - Access an Oracle APEX workspace.
-2. **Lab 1: Create Candidate Profile Page Manually** - Create a blank page and add two Static Content regions.
-3. **Lab 2: Add Regions to the Candidate Pipeline Page** - Add Dynamic Content and Cards regions.
-4. **Lab 3: Configure the Global Page** - Add a shared hiring banner to Page 0.
-5. **Lab 4: Add a Dynamic Content Region** - Display the active-candidate count on TAP Home.
-6. **Lab 5: Enable Debugging and Review** - Enable App Trace and review page-rendering details.
-7. **Lab 6: Employee Self Service (ESS) - Add Home Regions** - Add welcome and onboarding-progress regions to ESS Home.
-
 Estimated Workshop Time: 35 minutes
 
 ## Objectives
@@ -62,48 +50,48 @@ In this workshop, you will learn how to:
 
 ## Prerequisites
 
-- An APEX workspace.
+- An Oracle APEX 26.1 workspace running on an Oracle Database 19c or later. This workshop requires APEX 26.1. Some features, instructions, and screenshots may differ or not be available in prior releases.
 
-- The **Talent Acquisition Portal** and **Employee Self Service** applications.
+- An API key for the AI provider of your choice: OCI Generative AI, OpenAI, Cohere, Google Gemini, Anthropic Claude, Mistral AI, Ollama, or Generic OpenAI API Compatible.
 
-- The `TMS_JOB_REQUISITIONS` and `TMS_CANDIDATES` tables.
+    If you choose OCI Generative AI as your AI provider, the prerequisites are as follows:
 
-- An API key for the AI provider of your choice. Supported providers include OCI Generative AI, OpenAI, Cohere, Google Gemini, Anthropic Claude, Mistral AI, Ollama, and Generic OpenAI API Compatible providers.
+    - A paid Oracle Cloud Infrastructure (OCI) account or a FREE Oracle Cloud account with $300 credits for 30 days to use on other services. Read more about it at [oracle.com/cloud/free/](https://www.oracle.com/cloud/free/).
 
-If you choose OCI Generative AI as your AI provider, the prerequisites are as follows:
+    - The OCI account must be created in or subscribed to one of the regions that supports OCI Generative AI Service. Currently, OCI Generative AI Service is supported in the following regions:
 
-- A paid Oracle Cloud Infrastructure (OCI) account, or a Free Oracle Cloud account with $300 in credits valid for 30 days to use on other services. Learn more at [oracle.com/cloud/free](https://www.oracle.com/cloud/free/).
+        - Brazil East (Sao Paulo)
+        - Germany Central (Frankfurt)
+        - India South (Hyderabad)
+        - Japan Central (Osaka)
+        - Saudi Arabia Central (Riyadh)
+        - UAE East (Dubai)
+        - UK South (London)
+        - US East (Ashburn)
+        - US Midwest (Chicago)
+        - US West (Phoenix)
 
-    The OCI account must be created in, or subscribed to, a region that supports the OCI Generative AI service. OCI Generative AI is supported in the following regions:
+        OCI Generative AI Service is available in limited regions. To see whether your cloud region supports OCI Generative AI Service, visit the OCI documentation.
 
-    - Brazil East (Sao Paulo)
-    - Germany Central (Frankfurt)
-    - India South (Hyderabad)
-    - Japan Central (Osaka)
-    - Saudi Arabia Central (Riyadh)
-    - UAE East (Dubai)
-    - UK South (London)
-    - US East (Ashburn)
-    - US Midwest (Chicago)
-    - US West (Phoenix)
+    - An OCI compartment. An Oracle Cloud account comes with two pre-configured compartments: the tenancy root compartment and ManagedCompartmentForPaaS, which is created by Oracle for Oracle Platform services.
 
-    The OCI Generative AI service is available only in select regions. To see if your cloud region supports OCI Generative AI, visit the documentation.
+    - The logged-in user should have the necessary privileges to create and manage Autonomous Database instances in this compartment. You can configure these privileges through an OCI IAM policy. If you are using a Free Tier account, it is likely that you already have all the necessary privileges.
 
-- An OCI compartment. An Oracle Cloud account comes with two preconfigured compartments: the tenancy (root compartment) and `ManagedCompartmentForPaaS`, which is created by Oracle for Oracle Platform services.
+> **Note:** The application ID in the screenshots may vary. Please ignore the application ID.
 
-- The logged-in user must have the necessary privileges to create and manage Autonomous Database instances in this compartment. You can configure these privileges using an OCI IAM policy. If you are using a Free Tier account, it is likely that you already have all the necessary privileges.
-
-> **Note:** This workshop assumes you are using Oracle APEX 26.1. Some of the features might not be available in prior releases, and the instructions, flow, and screenshots might differ if you use an older version of Oracle APEX.
-
-> **Important:** This workshop requires an active account with a supported Generative AI provider. Oracle APEX connects to the provider using your own credentials. Any API usage charges are billed directly by your provider. Please review your provider's pricing before proceeding.
+> **Important:** This workshop requires an active account with a supported Generative AI provider. Oracle APEX connects to the provider of your choice using your own credentials. Any charges for API usage are billed directly by your provider. Please review your provider's pricing before proceeding.
 
 ## Downloads
 
-If you are stuck or the apps are not working as expected, you can download and install the completed applications.
+If you are stuck or the applications are not working as expected, you can download and install the completed applications as follows:
 
-1. **[Download the Talent Acquisition Portal export](files/talent-acquisition-portal-app.sql)**.
+1. Download the [Talent Acquisition Portal export](files/talent-acquisition-portal-app.sql).
 
-2. **[Download the Employee Self-Service Portal export](files/employee-self-service-portal-app.sql)**.
+2. Import the **Talent Acquisition Portal** export into your APEX workspace. Follow the steps in the **Import Application** wizard.
+
+3. Download the [Employee Self Service Portal export](files/employee-self-service-portal-app.sql).
+
+4. Import the **Employee Self Service Portal** export into your APEX workspace. Follow the steps in the **Import Application** wizard.
 
 ## Learn More - Useful Links
 

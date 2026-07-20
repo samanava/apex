@@ -32,7 +32,7 @@ In this lab, you will learn how to:
 
 ## Task 1: Enable Debugging
 
-In this task, you will enable **App Trace (Level 6)** from the Developer Toolbar on the running TAP Home page. App Trace records the application messages needed for the page and region review in the next task.
+In this task, you will enable **App Trace (Level 6)** to record application messages for TAP Home page and region processing.
 
 1. From the running TAP **Home** page, select **Debug** in the **Developer Toolbar**.
 
@@ -48,7 +48,7 @@ In this task, you will enable **App Trace (Level 6)** from the Developer Toolbar
 
 ## Task 2: Review and Disable Debugging
 
-In this task, you will open **View Debug**, select the debug identifier for the page request, and review its messages. You will examine page and region rendering steps, SQL queries, and elapsed times to identify slow processing. After the review, you will set the debug level to **Off**.
+In this task, you will review the debug messages for the page request. The messages show page and region rendering steps, SQL queries, and elapsed times that can help identify slow processing. You will then disable debugging.
 
 1. Select **Debug**, then select **View Debug**.
 

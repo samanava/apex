@@ -23,14 +23,9 @@ In this lab, you will learn how to:
 - Save and run the Candidate Profile page.
 
 
-### Prerequisites
-
-- The Talent Acquisition Portal application is available in your APEX Workspace.
-- You have developer access to the application.
-
 ## Task 1: Create and Inspect the Page
 
-In this task, you will run the Create Page Wizard and select **Blank Page** to create the **Candidate Profile** page. Page Designer opens automatically after APEX creates the page. You will then review its three main panes and display help for the Breadcrumb **Type** attribute.
+In this task, you will create a blank **Candidate Profile** page. You will then review the three main Page Designer panes and display help for the Breadcrumb **Type** attribute.
 
 1. In APEX App Builder, open the **Talent Acquisition Portal** application.
 
@@ -66,7 +61,7 @@ In this task, you will run the Create Page Wizard and select **Blank Page** to c
 
 ## Task 2: Add Candidate Profile Regions
 
-In this task, you will add the **Candidate Details** and **Application History** Static Content regions to **Body**. You will add the first region from the Gallery and the second from the Rendering Tree context menu. This demonstrates the two methods for creating a region manually in Page Designer.
+In this task, you will create the **Candidate Details** and **Application History** Static Content regions in **Body**. This task demonstrates two methods for creating a region manually in Page Designer.
 
 1. In the newly created page, navigate to the **Gallery Menu** at the bottom and confirm that the **Regions** tab is selected.
 

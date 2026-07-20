@@ -26,11 +26,6 @@ In this lab, you will learn how to:
 - Run the page and review the candidate card layout.
 
 
-### Prerequisites
-
-- The Talent Acquisition Portal has a **Candidate Pipeline** page.
-- The `TMS_JOB_REQUISITIONS` and `TMS_CANDIDATES` tables are available.
-
 ## Task 1: Add the Open Requisitions Banner
 
 In this task, you will create an **Open Requisitions** Dynamic Content region. You will add a PL/SQL function that counts open requisitions and returns the count as HTML. You will place the region in **Top Navigation** so it appears above the Candidate Pipeline content.
@@ -90,7 +85,7 @@ In this task, you will create an **Open Requisitions** Dynamic Content region. Y
 
 ## Task 2: Add the Candidate Cards Region
 
-In this task, you will create an **Applied** Cards region based on a SQL Query. The query returns the candidate name, current stage, and applied date. You will select those query columns for the card title, subtitle, body, and initials, and then run the page to review the result.
+In this task, you will create an **Applied** Cards region based on a SQL Query. The query returns the candidate name, current stage, and applied date for the card title, subtitle, body, and initials.
 
 1. In the **Rendering Tree**, right-click **Body**, then select **Create Region**.
 

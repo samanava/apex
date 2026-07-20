@@ -22,13 +22,13 @@ In this lab, you will learn how to:
 
 ## Task 1: Add the Welcome Banner
 
-In this task, you will switch from TAP to the **Employee Self Service** application and open its Home page in Page Designer. You will create a Static Content region in **Breadcrumb Bar** and add HTML that uses `&APP_USER.` to display the current application user.
+In this task, you will create a Static Content welcome region in **Breadcrumb Bar** on the ESS Home page. Its HTML uses `&APP_USER.` to display the current application user.
 
 1. Return to **Page Designer** and, in the left navigation, select the **App Builder** icon.
 
     ![App Builder icon selected in Page Designer](images/01-click-app-builder-icon.png " ")
 
-2. Return to the App Builder **Applications** page and open the **Employee Self Service** application.
+2. Return to the App Builder **Applications** page and open the **Employee Self Service Portal** application.
 
     ![Employee Self-Service application selected on the Applications page](images/02-open-employee-self-service.png " ")
 
@@ -97,13 +97,7 @@ In this task, you will create the **Your Onboarding Progress** Static Content re
 
 ## Summary
 
-You learned how to use **Layout > Position** to place regions in **Breadcrumb Bar** and **Body**.
-
-You also learned that `APP_USER` is the current user running the application and that its substitution string syntax is `&APP_USER.`.
-
-You added HTML to Static Content regions for the welcome message and onboarding progress placeholder.
-
-Across this module, you learned how APEX pages contain regions, how region types and sources control their output, how Page 0 shares components, and how debug output reveals page and region processing.
+You learned how to position Static Content regions and use `&APP_USER.` to personalize the ESS Home page.
 
 This completes the module.
 
