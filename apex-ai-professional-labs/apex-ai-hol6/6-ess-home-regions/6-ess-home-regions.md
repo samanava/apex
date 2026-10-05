@@ -2,11 +2,9 @@
 
 ## Introduction
 
-Use the **Layout > Position** attribute to select the template position for a region.
+Use the **Layout > Slot** attribute to select the template slot for a region.
 
-Static Content displays text content. `APP_USER` is the current user running the application, and its substitution string syntax is `&APP_USER.`.
-
-In this lab, you apply these concepts in the Employee Self Service (ESS) application. You add a welcome region to **Breadcrumb Bar** and an onboarding-progress region to **Body**.
+In this lab, you add a welcome region to **Breadcrumb Bar** and an onboarding-progress region to **Body** in the Employee Self Service (ESS) application.
 
 Estimated time: 5 minutes
 
@@ -42,6 +40,10 @@ In this task, you will create a Static Content welcome region in **Breadcrumb Ba
 
 5. In the **Property Editor**, enter/select the following:
 
+    - Under Identification:
+
+        - Title: **Employee Self-Service Portal**
+
     - Under Source:
 
         - HTML Code: Copy and paste the following:
@@ -65,7 +67,8 @@ In this task, you will create the **Your Onboarding Progress** Static Content re
 
     - Under Identification:
 
-        - Title: **Your Onboarding Progress**
+        - Name: **Your Onboarding Progress**
+        - Title: Leave blank.
 
     - Under Source:
 

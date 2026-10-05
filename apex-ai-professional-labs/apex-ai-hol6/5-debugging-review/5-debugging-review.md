@@ -42,7 +42,7 @@ In this task, you will enable **App Trace (Level 6)** to record application mess
 
     ![Enable Debug menu opened from the Developer Toolbar](images/03-select-app-trace-debug.png " ")
 
-3. Confirm that the debug toolbar appears.
+3. Confirm that the **Debug** option is toggled on in the **Developer Toolbar**.
 
     ![App Trace selected from the Enable Debug menu](images/enabled.png " ")
 

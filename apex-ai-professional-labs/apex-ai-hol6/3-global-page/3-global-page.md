@@ -4,7 +4,7 @@
 
 In APEX, Page 0 is the Global Page. The Oracle APEX engine renders all components you add to a Global page on every page within your application.
 
-The **Layout > Position** attribute selects the template position used to display a region. A page template must include the selected position for the region to appear there.
+The **Layout > Slot** attribute selects the template slot used to display a region. A page template must include the selected slot for the region to appear there.
 
 In this lab, you add a **Hiring_Info** Static Content region to the TAP Global Page. You place it in **After Logo** so the same hiring message appears near the top of TAP pages.
 
@@ -44,7 +44,7 @@ The region position controls where shared content appears. For this banner, you 
 
     - Under Identification:
 
-        - Name: **Hiring_Info**
+        - Name: **Hiring Info**
 
     - Under Source:
 

@@ -70,7 +70,7 @@ In this task, you will create an **Open Requisitions** Dynamic Content region. Y
 
     - Under Layout:
 
-        - Position: **Top Navigation**
+        - Slot: **Top Navigation**
 
     - Under Appearance:
 
@@ -121,20 +121,18 @@ In this task, you will create an **Applied** Cards region based on a SQL Query. 
 
     ![Applied Cards region properties](images/08-applied-cards-region-settings.png " ")
 
-3. Select the **Attributes** tab and configure the Cards attributes:
+3. Select the **Attributes** tab and configure the following columns:
 
-    - Under Card:
-
-        - Title Column: **CANDIDATE_NAME**
-        - Subtitle Column: **CURRENT_STAGE**
-        - Body Column: **APPLIED_ON**
+    - Title > Column: **CANDIDATE_NAME**
+    - Subtitle > Column: **CURRENT_STAGE**
+    - Body > Column: **APPLIED_ON**
 
     ![Cards title subtitle and body attributes configured](images/10-cards-card-attributes.png " ")
 
     - Under Icon and Badge:
 
-        - Icon Type: **Initials**
-        - Icon Initials Column: **CANDIDATE_NAME**
+        - Icon Source: **Initials**
+        - Icon Column: **CANDIDATE_NAME**
 
     ![Cards icon initials attributes configured](images/11-cards-icon-badge-attributes.png " ")
 

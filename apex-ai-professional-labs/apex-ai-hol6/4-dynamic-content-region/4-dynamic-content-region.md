@@ -22,7 +22,7 @@ In this lab, you will learn how to:
 
 In this task, you will create an **Active Candidates** Dynamic Content region on TAP Home. You will add a PL/SQL function that counts candidates whose stage is not **Hired** or **Rejected**. The function returns the count in a CLOB containing HTML, which APEX displays when it renders the region.
 
-1. From the running TAP page, use the **Developer Toolbar** at the bottom of the page and select **1 - Home** to open the Home page in Page Designer.
+1. From the running TAP page, use the **Developer Toolbar** at the bottom of the page and select **Page 1** to open the Home page in Page Designer.
 
     ![Home page opened from the Developer Toolbar](images/01-open-home-page-designer.png " ")
 
@@ -34,7 +34,7 @@ In this task, you will create an **Active Candidates** Dynamic Content region on
 
     - Under Identification:
 
-        - Title: **Active Candidates**
+        - Name: **Active Candidates**
         - Type: **Dynamic Content**
 
     - Under Source:
@@ -65,7 +65,7 @@ In this task, you will create an **Active Candidates** Dynamic Content region on
     - Under Appearance:
 
         - Template Options:
-            - Header: **Hidden but Accessible**
+            - Header: **Hidden**
 
     ![Active Candidates region template options configured](images/04-active-candidates-template-options.png " ")
 

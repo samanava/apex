@@ -2,12 +2,6 @@
 
 ## Introduction
 
-A page is the basic building block of an application. Developers add pages to an application by running the Create Page Wizard.
-
-A region is an area on a page that serves as a container for content.
-
-Use Page Designer to maintain and enhance pages within an Oracle APEX application. Page Designer includes the Rendering tree, Layout tab, Property Editor, and other tools for working with page components.
-
 In this lab, you use the Create Page Wizard to create a blank **Candidate Profile** page in the Talent Acquisition Portal (TAP). You then review the Page Designer panes, display help for an attribute, and add two Static Content regions to **Body**.
 
 Estimated time: 5 minutes
@@ -35,7 +29,7 @@ In this task, you will create a blank **Candidate Profile** page. You will then 
 
     ![Create Page button](images/02-create-page.png " ")
 
-3. Select **Blank Page**, then select **Next**.
+3. Select the **Component** tab, select **Blank Page**, then select **Next**.
 
     ![Blank Page option](images/03-select-blank-page.png " ")
 
