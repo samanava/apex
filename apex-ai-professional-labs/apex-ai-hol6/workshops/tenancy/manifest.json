@@ -1,11 +1,11 @@
 {
-    "workshoptitle": "Oracle APEX Developer Professional - Working with Pages and Regions",
+    "workshoptitle": "Working with Pages and Regions",
     "help": "livelabs-help-apex_us@oracle.com",
     "tutorials": [
         {
             "title": "Introduction",
-            "filename": "../../../introduction/introduction.md",
-            "description": "Workshop overview, APEX page and region concepts, objectives, prerequisites, downloads, and useful links."
+            "filename": "../../introduction/introduction.md",
+            "description": "Workshop overview, objectives, prerequisites, downloads, and useful links."
         },
         {
             "title": "Get Started",

@@ -46,12 +46,12 @@ In this task, you will create an **Open Requisitions** Dynamic Content region. Y
 
     - Under Identification:
 
-        - Title: **Open Requisitions**
+        - Name: **Open Requisitions**
         - Type: **Dynamic Content**
 
     - Under Source:
 
-        - PL/SQL Function Body returning HTML: Copy and paste the following:
+        - PL/SQL Function Body returning CLOB: Copy and paste the following:
 
             ```sql
             <copy>
@@ -75,13 +75,19 @@ In this task, you will create an **Open Requisitions** Dynamic Content region. Y
     - Under Appearance:
 
         - Template Options:
-            - Header: **Hidden but Accessible**
+            - Header: **Hidden**
+
+                Click **Ok**.
 
     ![Open Requisitions banner region properties](images/04-configure-open-requisitions-banner.png " ")
 
-5. Select **Save**.
+5. Select **Save and Run**.
 
     ![Save selected for the Open Requisitions banner region](images/05-save-open-requisitions-banner.png " ")
+
+6. Confirm that the **Open Requisitions** count appears above the Candidate Pipeline region. Return to Page Designer to continue.
+
+    ![Candidate Pipeline page showing the Open Requisitions count above its content](images/06-open-requisitions-runtime.png " ")
 
 ## Task 2: Add the Candidate Cards Region
 

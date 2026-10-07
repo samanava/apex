@@ -89,9 +89,13 @@ In this task, you will create the **Candidate Details** and **Application Histor
 
     ![Save and Run selected in Page Designer](images/12-save-and-run-page.png " ")
 
-7. Confirm that the page displays **Candidate Details** followed by **Application History**.
+7. Enter your username and password, then click **Sign In**.
 
-    ![Candidate Profile page with Candidate Details and Application History regions](images/13-candidate-profile-page-run.png " ")
+    ![Talent Acquisition Portal application sign-in page](images/13-application-sign-in.png " ")
+
+8. Confirm that the page displays **Candidate Details** followed by **Application History**.
+
+    ![Candidate Profile page with Candidate Details and Application History regions](images/14-candidate-profile-page-run.png " ")
 
 ## Summary
 

@@ -4,7 +4,7 @@
 
 Use the **Layout > Slot** attribute to select the template slot for a region.
 
-In this lab, you add a welcome region to **Breadcrumb Bar** and an onboarding-progress region to **Body** in the Employee Self Service (ESS) application.
+In this lab, you update the existing welcome region in **Breadcrumb Bar** and add an onboarding-progress region to **Body** in the Employee Self Service (ESS) application.
 
 Estimated time: 5 minutes
 
@@ -13,14 +13,14 @@ Estimated time: 5 minutes
 In this lab, you will learn how to:
 
 - Open the Employee Self Service (ESS) Home page in Page Designer.
-- Add a personalized welcome message to the ESS breadcrumb region.
+- Update the existing ESS breadcrumb region with a personalized welcome message.
 - Add a static onboarding progress region.
 - Run the ESS Home page and confirm that both regions appear.
 
 
-## Task 1: Add the Welcome Banner
+## Task 1: Update the Breadcrumb Welcome Region
 
-In this task, you will create a Static Content welcome region in **Breadcrumb Bar** on the ESS Home page. Its HTML uses `&APP_USER.` to display the current application user.
+In this task, you will update the existing **Employee Self-Service Portal** Static Content region in **Breadcrumb Bar** on the ESS Home page. Its HTML uses `&APP_USER.` to display the current application user.
 
 1. Return to **Page Designer** and, in the left navigation, select the **App Builder** icon.
 
@@ -34,15 +34,7 @@ In this task, you will create a Static Content welcome region in **Breadcrumb Ba
 
     ![ESS Home page selected on the application home page](images/03-open-ess-home-page.png " ")
 
-4. In the **Rendering Tree**, right-click **Breadcrumb Bar**, then select **Create Region**.
-
-    ![Create Region selected from the Breadcrumb Bar context menu](images/04-create-welcome-region.png " ")
-
-5. In the **Property Editor**, enter/select the following:
-
-    - Under Identification:
-
-        - Title: **Employee Self-Service Portal**
+4. In the **Rendering Tree**, select the existing **Employee Self-Service Portal** region under **Breadcrumb Bar**. In the **Property Editor**, enter/select the following:
 
     - Under Source:
 
@@ -54,6 +46,9 @@ In this task, you will create a Static Content welcome region in **Breadcrumb Ba
             <p>You have onboarding tasks waiting.</p>
             </copy>
             ```
+
+
+    ![Existing Employee Self-Service Portal region selected with its source and template settings](images/04-edit-breadcrumb-region.png " ")
 
 ## Task 2: Add the Onboarding Progress Region
 
@@ -68,7 +63,7 @@ In this task, you will create the **Your Onboarding Progress** Static Content re
     - Under Identification:
 
         - Name: **Your Onboarding Progress**
-        - Title: Leave blank.
+        - Title: **Your Onboarding Progress**
 
     - Under Source:
 
@@ -90,6 +85,8 @@ In this task, you will create the **Your Onboarding Progress** Static Content re
 
     ![Onboarding Progress region properties configured](images/06-configure-onboarding-progress.png " ")
 
+    This static progress display will be replaced by a real computation in Module 12.
+
 3. Select **Save and Run**.
 
     ![Save and Run selected for ESS Home](images/07-save-and-run-ess-home.png " ")
@@ -100,7 +97,7 @@ In this task, you will create the **Your Onboarding Progress** Static Content re
 
 ## Summary
 
-You learned how to position Static Content regions and use `&APP_USER.` to personalize the ESS Home page.
+You learned how to update an existing Static Content region, add an onboarding-progress region, and use `&APP_USER.` to personalize the ESS Home page.
 
 This completes the module.
 
